@@ -1,0 +1,15 @@
+Configuring Jenkins Proxy
+-------------------------
+
+1. Launch your Jenkins from web browser with URL localhost:8080
+
+2. Navigate to Jenkins --> Manage Jenkins --> Manage Plugins --> Advanced Tab
+
+   Configure your proxy server
+
+   Server: Proxy Server IP Address	
+   Port : 8080
+   User name : your training machine user name
+   Password : your training machine password
+   No Proxy Host: localhost|your-training-machine-ip-address
+

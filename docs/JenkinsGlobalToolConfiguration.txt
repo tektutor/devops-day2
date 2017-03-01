@@ -1,0 +1,20 @@
+Depending on what version of Jenkins you are using, your Jenkins options may slightly vary.
+
+You can check the Jenkins version from Jenkins Home page (localhost:808), bottom right corner on your browser.
+
+Navigate To
+Jenkins --> Manage Jenkins --> Global Tool Configuration
+
+Configuring JDK
+Try to locate JDK and look for JDK Installations button and click it
+
+If you already see JDK Name followed by JAVA_HOME path, you are all set. But please ensure your java home directory is correct.  You can verify the the Java home using mvn --version command from your terminal. 
+
+In certain cases, Maven will report JRE path as the JAVA_HOME, in case this
+happens to be the case in your machine,you may want to provide the JAVA_HOME one level above the jre folder.
+
+Configuring Maven
+Try to locate Maven and look for Maven Installations button and click it
+
+Generally the Maven path will be /usr/share/maven, however you can cross-check
+what your mvn --version command reports as MAVEN_HOME.

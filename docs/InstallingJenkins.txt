@@ -1,0 +1,40 @@
+In Ubuntu, Jenkins can be installed couple of ways
+
+1. Installing via apt-get package manager
+wget -q -O - https://pkg.jenkins.io/debian/jenkins-ci.org.key | sudo apt-key add -
+sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+sudo apt-get update
+sudo apt-get install jenkins
+
+2. Download Stand-alone Jenkins war file from www.jenkins.io
+curl http://mirrors.jenkins.io/war-stable/latest/jenkins.war
+
+3. In case you can installed Jenkins via apt-get package manager, then you can start/stop/restart using the below commands
+sudo service jenkins start
+sudo service jenkins stop
+sudo service jenkins restart
+
+4. In case you are using jenkins.war file as stand-alone Jenkins (which is my preferred approach), you will have to start jenkins this way 
+java -jar ./jenkins.war
+
+I'm assuming you are already inside the folder that has jenkins.war.
+
+5. Once Jenkins is started, you can launch jenkins portal from your web browser.
+By default, Jenkins uses port 8080 unless configured explicitly to use some other ports
+
+In the web browser, address bar please type the URL localhost:8080
+
+6. In case, Jenkins is started first time after a fresh installation then Jenkins will expect you to type the secret key.  The secret key normally shows up in the command prompt or terminal from where you launched Jenkins.  Alternatively, you can also find the secret key at the below location ~/.jenkins/secrets/initialAdminPassword
+
+7. Jenkins will then prompt you to create a user, please provide the same training user credentials shared with you, i.e credentials you use to login to the training machine. In case you provide your own user name and password, when other participants use the training VM, they will not know the credentials you supplied, this make it practically difficult to reuse the Jenkins setup. I need your co-operation here, thanks!
+
+8. Once the secret key is supplied and user is created, Jenkins will prompt you to install the suggested plugins, please ensure you install the suggested plugins.
+
+9. If all goes well, you will be able to login with the user credentials you just created.
+
+10. It is possible that some one has already created a Jenkins user, in that case when you launch localhost:8080 from your web browser, it will not straight away prompt for login or it will directly take you the jenkins home page.
+
+Congrats! you are all set to play with Jenkins.
+
+##### Troubleshooting #####
+1. In case you aren't able to login, you may stop jenkins and  optionally delete the .jenkins folder from your home directory and relaunch jenkins to repeat the procedure mentioned above.

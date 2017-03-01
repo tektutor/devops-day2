@@ -1,0 +1,13 @@
+At times, your Firefox may report that already one instance is started and may not allow
+you to launch browser.  In case this happens, no big deal just try this and you should be 
+able to move forward after following these steps
+
+ps -ef|grep -i firefox
+
+The above command will help list the process id of the firefox.  You can then kill the firefox using 
+
+sudo kill -9 <pid>
+
+Your sudo password will be the training machine password.
+
+Substitute the <pid> with the process id
