@@ -1,3 +1,5 @@
+Unable to launch Firefox?
+------------------------
 At times, your Firefox may report that already one instance is started and may not allow
 you to launch browser.  In case this happens, no big deal just try this and you should be 
 able to move forward after following these steps
@@ -11,3 +13,9 @@ sudo kill -9 <pid>
 Your sudo password will be the training machine password.
 
 Substitute the <pid> with the process id
+
+In case your Firefox keeps crashing, please check this article
+--------------------------------------------------------------
+https://www.maketecheasier.com/what-to-do-firefox-keeps-crashing/
+
+In short, you may have to launch Firefox in Safe mode by holding Shift key or if Safe mode doesn't seem to fix your issue, you may want to reinstall Firefox or try installing Chrome browser.
