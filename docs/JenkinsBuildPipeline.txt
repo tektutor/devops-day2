@@ -1,0 +1,15 @@
+Let's say you wish to create 3 pipeline stages for your Maven project.  Then you need to create 3 Jenkins jobs.
+
+1. You first stage looks nothing different from regular Maven Job except that in the Add post-build action select "Archive the artifacts". Apply and Save your changes.
+
+2. In the second stage, in Build Triggers section, you need to select Build after other projects are built and select the first stage project. In the post-build action select "Archive the artifacts". Save and Apply your changes. 
+
+Repeat the step 2 for the stage 3 project ,except for one change i.e Build Triggers section you need to select Build after other project are build and select the second stage project. Save and Apply your changes.
+
+3. Go back to Jenkins home page, on the right side where you see all the projects listed, try to locate the tab with "+" and click on it.
+
+4. Select Build Pipeline View and type a view name as per your preference.
+
+5. Select Initial Job -> Choose the Stage 1 Jenkins job and save and run the view. 
+
+ 

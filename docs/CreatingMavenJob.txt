@@ -1,0 +1,16 @@
+Creating a Maven Job in Jenkins
+-------------------------------
+
+1. Select New Item --> Maven Project and type an name say HelloCI and click Ok.
+
+2. In Source Code Management Section, select Git and provide your local git
+   repository URL. Make sure you also provide the training machine credentials
+   for Jenkins to communicate with Git Server.
+
+3. In Build Triggers --> select Poll SCM and type to setup polling for every 2 minutes
+
+   H/02 * * * * 
+
+4. In Build --> Goals and options type clean test
+
+5. Apply and Save.

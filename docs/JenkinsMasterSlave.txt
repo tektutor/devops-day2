@@ -1,0 +1,23 @@
+Jenkins Master-slave Node configuration
+---------------------------------------
+
+1. Navigate to Jenkins --> Manage Jenkins --> Manage Node --> New node
+
+2. Select Dump Slave and type a Node name
+
+3. Provide a Remote root directory on the slave machine, preferably home directory.
+
+4. Launch method -> ensure SSH is selected for Unix machines
+
+5. Host is the IP address of the unix slave
+
+6. Credentials - supply the credentials of unix slave machine
+
+7. Save
+
+
+Now create a Jenkins job and select Restrict where this project can be run and choose the slave node.  Apply and Save.
+
+
+
+
