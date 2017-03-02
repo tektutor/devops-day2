@@ -1,6 +1,6 @@
 Depending on what version of Jenkins you are using, your Jenkins options may slightly vary.
 
-You can check the Jenkins version from Jenkins Home page (localhost:808), bottom right corner on your browser.
+You can check the Jenkins version from Jenkins Home page (localhost:8080), bottom right corner on your browser.
 
 Navigate To
 Jenkins --> Manage Jenkins --> Global Tool Configuration
